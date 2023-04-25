@@ -29,9 +29,9 @@ $trackingNumber = htmlspecialchars($trackingNumber);
 $trackingNumberUrl = htmlspecialchars($trackingNumberUrl);
 
 // Set up the Shopify API credentials and URL
-$shopifyApiKey = '68d7897c7f55247505dff225bdb3d4e8';
+/*$shopifyApiKey = '68d7897c7f55247505dff225bdb3d4e8';
 $shopifyApiSecret = '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';
-$shopifyStoreUrl = 'https://test123-4955.myshopify.com';
+$shopifyStoreUrl = 'https://test123-4955.myshopify.com';*/
 
 // Get the fulfillment orders for the specified order ID
 $url = $shopifyStoreUrl . '/admin/api/2023-04/orders/'.$id.'/fulfillment_orders.json';
