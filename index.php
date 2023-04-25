@@ -2,7 +2,7 @@
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-
+echo  $shopifyStoreUrl;
 
 // Get the input parameters
 $id = $_GET['id'] ?? null;
@@ -31,7 +31,7 @@ $trackingNumberUrl = htmlspecialchars($trackingNumberUrl);
 
 
 // Get the fulfillment orders for the specified order ID
-echo $url = $shopifyStoreUrl . '/admin/api/2023-04/orders/'.$id.'/fulfillment_orders.json';
+$url = $shopifyStoreUrl . '/admin/api/2023-04/orders/'.$id.'/fulfillment_orders.json';
 
 $ch = curl_init();
 
