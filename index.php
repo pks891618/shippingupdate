@@ -2,8 +2,9 @@
 
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
-echo  $shopifyStoreUrl;
 
+$shopifyStoreUrl= getenv('shopifyStoreUrl');
+echo  $shopifyStoreUrl;
 // Get the input parameters
 $id = $_GET['id'] ?? null;
 $trackingNumber = $_GET['trackingNumber'] ?? null;
