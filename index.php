@@ -4,7 +4,10 @@ error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
 $shopifyStoreUrl= getenv('shopifyStoreUrl');
-echo  $shopifyStoreUrl;
+
+$shopifyApiKey = getenv('shopifyApiKey');
+$shopifyApiSecret = getenv('shopifyApiSecret');
+
 // Get the input parameters
 $id = $_GET['id'] ?? null;
 $trackingNumber = $_GET['trackingNumber'] ?? null;
