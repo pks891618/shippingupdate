@@ -14,7 +14,7 @@ $trackingNumber = $_GET['trackingNumber'] ?? null;
 $trackingNumberUrl = $_GET['trackingNumberUrl'] ?? null;
 
 // Check if the required parameters are present
-if (!$id || !$trackingNumber || !$trackingNumberUrl) {
+if (!$id || !$trackingNumber ) {
     http_response_code(400);
     echo json_encode(['error' => 'Missing required parameters']);
     exit;
